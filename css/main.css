@@ -151,7 +151,7 @@ work .card-title{
   font-size: 40px;
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 2560px) {
   work .nc-news, .nc-buddy, .squash-toad{
     width: 60%;
     opacity: 0.9;
