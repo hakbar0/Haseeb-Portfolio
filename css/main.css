@@ -29,16 +29,17 @@ header{
 }
 
 content {
-  width: 100%;
-  height: 500px;
-  margin-bottom: 15px;
+  width: 86vw;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 featured {
-  width: 100%;
-  height: 1000px;
-  /* background: ghostwhite; */
+  width: 86vw;
+  height: auto;
+  margin-bottom: 15px;
 }
+
 
 ul, nav {
   list-style: none;
@@ -110,9 +111,6 @@ content .image-src{
 /* Portfolio */
 
 work{
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content: space-around;
   text-align: center;
 }
 
@@ -121,16 +119,15 @@ work{
   text-align: center;
 }
 
-work .nc-news, .nc-buddy{
-  width: 60%;
+
+
+work .nc-news, .nc-buddy, .squash-toad{
+  width: 90%;
   opacity: 0.9;
   margin-bottom: 30px;
+  margin-left: 5%;
 }
 
-work .quadcopter, .squash-toad{
-  margin-bottom: 30px;
-  width: 60%;
-}
 
 work .nc-news:hover{
   opacity: 1;
@@ -140,7 +137,22 @@ work .nc-buddy:hover{
   opacity: 1;
 }
 
+work .squash-toad:hover{
+  opacity: 1;
+}
+
 
 work .card-title{
   font-size: 40px;
 }
+
+@media (min-width: 1650px) {
+  work .nc-news, .nc-buddy, .squash-toad{
+    width: 60%;
+    opacity: 0.9;
+    margin-bottom: 30px;
+  }
+}
+
+/* Footer */
+
