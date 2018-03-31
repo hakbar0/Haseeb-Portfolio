@@ -40,8 +40,14 @@ featured {
   margin-bottom: 15px;
 }
 
+footer{
+  width: 100%;
+  height: 100px;  
+  margin-bottom: 1px;
+}
 
-ul, nav {
+
+ul, nav, footer {
   list-style: none;
 }
 
@@ -56,7 +62,7 @@ a:hover{
   color: gold;
 }
 
-header{
+header, footer{
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
@@ -71,13 +77,13 @@ header{
   }
 }
 
-header nav{
+header nav, footer{
   display: flex;
   justify-content: flex-end;
   font-size: 20px;  
 }
 
-header nav li{
+header nav li, footer li{
   margin: 0 20px;
   }
   
@@ -95,6 +101,8 @@ content .intro{
   text-align: center;
   font-size: 30px;
   line-height: 200%;
+  animation: 1s fade 0.5s forwards;
+  opacity: 0;
 }
 
 content{
@@ -110,8 +118,17 @@ content .image-src{
 
 /* Portfolio */
 
+@keyframes slide {
+  100%{
+    opacity: 1;
+    margin: 10px;
+  }
+}
+
 work{
+
   text-align: center;
+
 }
 
   .featured {
@@ -121,9 +138,10 @@ work{
 
 
 
-work .nc-news, .nc-buddy, .squash-toad{
+work .nc-news, .nc-buddy, .squash-toad, .featured{
+  opacity: 0;
   width: 90%;
-  opacity: 0.9;
+  animation: 1s slide 1s forwards;
   margin-bottom: 30px;
   margin-left: 5%;
 }
@@ -155,4 +173,15 @@ work .card-title{
 }
 
 /* Footer */
+
+footer li .github, .youtube{
+  width: 64px;
+  height: 64px;
+}
+
+.linkedin{
+  margin-top: 6px;
+  width: 50px;
+  height: 50px;
+}
 
