@@ -147,20 +147,6 @@ work .nc-news, .nc-buddy, .squash-toad, .featured{
   margin-left: 5%;
 }
 
-
-work .nc-news:hover{
-  opacity: 1;
-}
-
-work .nc-buddy:hover{
-  opacity: 1;
-}
-
-work .squash-toad:hover{
-  opacity: 1;
-}
-
-
 work .card-title{
   font-size: 40px;
 }
