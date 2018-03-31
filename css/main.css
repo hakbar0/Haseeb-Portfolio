@@ -112,7 +112,8 @@ content .image-src{
 work{
   display: flex; 
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
   .featured {
@@ -120,16 +121,25 @@ work{
   text-align: center;
 }
 
-work .nc-news{
-  width: 800px;
-  text-align: center;
+work .nc-news, .nc-buddy{
+  width: 60%;
   opacity: 0.9;
   margin-bottom: 30px;
+}
+
+work .quadcopter, .squash-toad{
+  margin-bottom: 30px;
+  width: 60%;
 }
 
 work .nc-news:hover{
   opacity: 1;
 }
+
+work .nc-buddy:hover{
+  opacity: 1;
+}
+
 
 work .card-title{
   font-size: 40px;
