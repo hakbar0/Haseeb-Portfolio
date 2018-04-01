@@ -14,12 +14,16 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 #wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 86vw;
   height: auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 auto;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* NAVBAR */
@@ -64,12 +68,23 @@ a:hover{
 }
 
 header, footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 15px;
-  animation: 1s fade 0.5s forwards;
+  -webkit-animation: 1s fade 0.5s forwards;
+          animation: 1s fade 0.5s forwards;
   opacity: 0;
   color: goldenrod;
+}
+
+@-webkit-keyframes fade {
+  100%{
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
@@ -79,8 +94,12 @@ header, footer{
 }
 
 header nav, footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 20px;  
 }
 
@@ -102,14 +121,20 @@ content .intro{
   text-align: center;
   font-size: 30px;
   line-height: 200%;
-  animation: 1s fade 0.5s forwards;
+  -webkit-animation: 1s fade 0.5s forwards;
+          animation: 1s fade 0.5s forwards;
   opacity: 0;
 }
 
 content{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; 
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap; 
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 content .image-src{ 
@@ -118,6 +143,13 @@ content .image-src{
 }
 
 /* Portfolio */
+
+@-webkit-keyframes slide {
+  100%{
+    opacity: 1;
+    margin: 10px;
+  }
+}
 
 @keyframes slide {
   100%{
@@ -142,7 +174,8 @@ work{
 work .nc-news, .nc-buddy, .squash-toad, .featured, .crypto-app{
   opacity: 0;
   width: 90%;
-  animation: 1s slide 1s forwards;
+  -webkit-animation: 1s slide 1s forwards;
+          animation: 1s slide 1s forwards;
   margin-bottom: 30px;
   margin-left: 5%;
 }
@@ -171,4 +204,3 @@ footer li .github, .youtube{
   width: 50px;
   height: 50px;
 }
-
