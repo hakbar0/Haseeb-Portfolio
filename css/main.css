@@ -139,7 +139,7 @@ work{
 
 
 
-work .nc-news, .nc-buddy, .squash-toad, .featured{
+work .nc-news, .nc-buddy, .squash-toad, .featured, .crypto-app{
   opacity: 0;
   width: 90%;
   animation: 1s slide 1s forwards;
