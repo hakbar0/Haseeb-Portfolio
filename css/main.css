@@ -195,14 +195,13 @@ work .card-title{
 
 @media (max-width: 450px) {
   content .intro {
-   margin-bottom: -30px;
+   margin-bottom: -20px;
    font-size: 20px;
   }
 
-  featured{
-    font-size: 20px;
+  featured .featured{
+    font-size: 40px;
   }
-
 }
 
 
