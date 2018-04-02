@@ -171,7 +171,7 @@ work{
 
 
 
-work .nc-news, .nc-buddy, .squash-toad, .featured, .crypto-app{
+work .nc-news, .nc-buddy, .squash-toad, .featured, .crypto-app, .blocks{
   opacity: 0;
   width: 90%;
   -webkit-animation: 1s slide 1s forwards;
@@ -185,7 +185,7 @@ work .card-title{
 }
 
 @media (min-width: 900px) {
-  work .nc-news-a, .nc-buddy-a, .crypto-app-a, .squash-toad-a{
+  work .nc-news-a, .nc-buddy-a, .crypto-app-a, .squash-toad-a, .blocks-a{
     width: 50%;
     opacity: 1;
     margin-bottom: 30px;
